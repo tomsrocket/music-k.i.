@@ -34,3 +34,11 @@ Make music with Artificial Intelligence
 * Write a training program, maybe like this: https://machinelearningmastery.com/text-generation-lstm-recurrent-neural-networks-python-keras/
 * If it works, ask Thorben, he has ideas for better and newer ways to predict the music :)
 
+## Commands
+
+    # shorten the mp3
+    ffmpeg -i some.mp3 -ss 00:00:00 -to 00:00:20  test.mp3
+
+    # filter some frequencies
+    ffmpeg -i test.mp3 -filter:a bandpass=f=440:width_type=q:w=1.1 test32.mp3
+ 
